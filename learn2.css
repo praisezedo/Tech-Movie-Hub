@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(40deg , black , blue);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.movie-details-card {
+  background:transparent;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  
+}
+.details-poster {
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.back-btn {
+  margin-top: 32px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #005bb5;
+}
+.watch-btn {
+  text-decoration: none;
+  color: white;
+  background: #1e90ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 70px;
+  display: inline-block;
+}
+.watch-btn:hover {
+  background: #005bb5;
+}

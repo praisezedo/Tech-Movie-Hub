@@ -1,0 +1,64 @@
+/* Popup for no internet connection */
+.no-internet-blur {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9998;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+  pointer-events: all;
+}
+.no-internet-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(40deg , blue , black);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 16px;
+}
+.no-internet-popup h2 {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  color: #1e90ff;
+}
+.no-internet-popup .popup-btns {
+  display: flex;
+  gap: 18px;
+  margin-top: 24px;
+}
+.no-internet-popup button {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(40deg , blue , black);
+  transition: background 0.2s;
+}
+.no-internet-popup .exit-btn {
+  background: linear-gradient(40deg , blue , black);
+  color: white;
+}
+.no-internet-popup .exit-btn:hover {
+  background: blue;
+}
+.no-internet-popup .reload-btn {
+  background:  linear-gradient(40deg , blue , black);
+  color: #fff;
+}
+.no-internet-popup .reload-btn:hover {
+  background: blue;
+}

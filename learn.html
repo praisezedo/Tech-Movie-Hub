@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Movie Hub</title>
+<link rel="stylesheet" href="learn.css">
+<link rel="stylesheet" href="popup.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+<script src="learn.js" defer></script>
+</head>
+<body>
+<div id="no-internet-blur" class="no-internet-blur" style="display:none;"></div>
+<div id="no-internet-popup" class="no-internet-popup" style="display:none;">
+  <h2>No Internet Connection</h2>
+  <div class="popup-btns">
+    <button class="exit-btn">Exit</button>
+    <button class="reload-btn">Reload</button>
+  </div>
+</div>
+<header>
+<div class="logo">
+<h1>Tech Movie Hub</h1>
+</div>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<button id="toggle-menu" type="button">Genre</button>
+<li><a href="#about">About</a></li>
+</ul>
+</nav>
+<div class="search-bar">
+<input type="text" id="search-input" placeholder="Search for movies...">
+<button onclick="searchMovies()">Search</button>
+</div>
+</header>
+
+<!-- Main Content -->
+
+<main>
+  <div id="popup" class="popup">
+<ul>
+   <li><a href="#sci-fi">Sci-fi</a></li>
+   <li><a href="#mystery">Mystery</a></li>
+   <li><a href="#space-travel">Space Travel</a></li>
+   <li><a href="#animation">Animation</a></li>
+   <li><a href="#fantasy">Fantasy</a></li>
+   <li><a href="#history">History</a></li>
+   <li><a href="#thriller">Thriller</a></li>
+   <li><a href="#adventure">Adventure</a></li>
+   <li><a href="#action">Acion</a></li>
+   <li><a href="#documentary">Documentary</a></li>
+   <li><a href="#drama">Drama</a></li>
+   <li><a href="#comedy">Comedy</a></li>
+   <li><a href="#family">Family</a></li>
+   <li><a href="#horror">Horror</a></li>
+   <li><a href="#romance">Romance</a></li>
+   <li><a href="#war">War</a></li>
+   <li><a href="#western">Western</a></li>
+   <li><a href="#crime">Crime</a></li>
+   <li><a href="#music">Music</a></li>
+</ul>
+</div>
+  <!-- Example styled movie card for reference -->
+  <section class="latest-movies" id="home">
+    <h1 style="text-align:center;font-size: 4rem;">Latest Movies</h1>
+    <div class="movie-slider">
+<div class="movie-grid" id="movie-grid-latest">
+</div>
+    </div>
+  </section>
+  <section id="sci-fi">
+  <div class="movie-slider">
+    <div class="movie-grid" id="movie-grid-sci-fi">
+    </div>
+  </div>
+  <button  id="view-more">View More</button>
+</section>
+  <section id="mystery">
+<div class="movie-slider">
+     <div class="movie-grid" id="movie-grid-mystery"></div>
+</div>
+<button  id="view-more">View More</button>
+  </section>
+  <section id="space-travel">
+    <div class="movie-slider">
+       <div class="movie-grid" id="movie-grid-space-travel"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="animation">
+ <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-animation"></div>
+ </div>
+ <button id="view-more">View More</button>
+  </section>
+  <section id="fantasy">
+    <div class="movie-slider">
+       <div class="movie-grid" id="movie-grid-fantasy"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="history">
+<div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-history"></div>
+</div>
+<button  id="view-more">View More</button>
+  </section>
+  <section id="thriller">
+   <div class="movie-slider">
+     <div class="movie-grid" id="movie-grid-thriller"></div>
+   </div>
+   <button  id="view-more">View More</button>
+  </section>
+  <section id="adventure">
+   <div class="movie-slider">
+     <div class="movie-grid" id="movie-grid-adventure"></div>
+   </div>
+   <button id="view-more">View More</button>
+  </section>
+  <section id="action">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-action"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="documentary">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-documentary"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="drama">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-drama"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="comedy">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-comedy"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="family">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-family"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="horror">
+   <div class="movie-slider">
+     <div class="movie-grid" id="movie-grid-horror"></div>
+   </div>
+   <button  id="view-more">View More</button>
+  </section>
+  <section id="romance">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-romance"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="war">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-war"></div>
+    </div>
+    <button id="view-more">View More</button>
+  </section>
+  <section id="western">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-western"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="crime">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-crime"></div>
+    </div>
+    <button  id="view-more">View More</button>
+  </section>
+  <section id="music">
+    <div class="movie-slider">
+      <div class="movie-grid" id="movie-grid-music"></div>
+    </div>
+    <button id="view-more">View More</button>
+  </section>
+</main>
+<section class="about" id="about">
+    <h1 class="fade-in">About Tech Movie Hub.</h1>
+    <div class="aboutcontainer">
+    <div class="aboutimg fade-in">
+    <img src="nasa-Q1p7bh3SHj8-unsplash.jpg" alt="photo" width="400">
+  
+  </div>
+  <div class="abouttext">
+      <p class="fade-in">
+    Tech movie hub is a platform where tech minded individuals shape their mindset 
+     and get to understand how technology has solved problem in different field of life,
+     thinking and growing smart in order to make what is in existence more efficient and to 
+     build the onces which are not already in existence through tech movies people gain insight 
+     that can shape the world for a more better tommorrow. 
+    </p>
+  </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Tech Movie Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
